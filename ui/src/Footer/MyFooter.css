@@ -1,0 +1,77 @@
+.ant-layout-footer {
+	padding: 0px 0px !important;
+	background-color: #f4f4f4;
+	z-index: 1;
+}
+#cts-footer {
+    display: block;
+    width: 100%;
+    border-top: 0.0625rem solid #e8e7e8;
+    background-color: #f4f4f4;
+    font-size:11px;
+    font-weight: inherit;
+    padding-top:0.812rem;
+    padding-left:0.9375rem;
+    padding-bottom:0.812rem;
+    font-family: arial;
+    position: fixed;
+    bottom: 0;
+}
+#footer-logo{
+  background-color: #f4f4f4;
+  height:1.25rem;
+}
+
+#footer-navigation{
+    padding-top:1rem;
+    text-align: left !important;
+}
+
+#footer-navigation li {
+    display: inline-block;
+    margin-right:0.9375rem;
+    color: #5f666d;
+}
+
+#footer-navigation a:visited {
+    color: #006aa3;
+}
+a:link {
+    color: #006aa3;
+    text-decoration: none;
+}
+a:visited {
+    color: #7e318e;
+    text-decoration: none;
+}
+a:link {
+    color: #007cc3;
+    text-decoration: none;
+}
+
+a {
+    display: inline;
+    color: #007cc3;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+ul, menu, dir {
+    margin-top: 0.0625rem;
+    padding-left:0.0625rem;
+}
+
+ul{
+  margin-bottom:0.125rem;
+}
+
+#footer-logo img{
+    display: block;
+    border: none;
+    width: 108px;
+    width: 7rem;
+    height: 26px;
+    height: 1.75rem;
+}
+

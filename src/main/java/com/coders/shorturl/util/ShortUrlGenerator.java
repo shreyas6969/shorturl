@@ -20,4 +20,16 @@ public class ShortUrlGenerator {
 
 		return sb.toString();
 	}
+	
+	public boolean isValidlongUrl(String longUrl)
+	{
+		if(longUrl.startsWith("https") || longUrl.startsWith("http") || longUrl.startsWith("/"))
+		{
+		   return true;	
+		}
+		else
+		{
+			return false;
+		}		
+	}
 }

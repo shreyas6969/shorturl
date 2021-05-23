@@ -23,9 +23,18 @@ public class UrlService {
 
 
     public UrlData saveUrlData(UrlData urlData) {
+    	if(!(shortUrlGenerator.isValidlongUrl(urlData.getLongUrl())))
+    	{
+    		urlData.setLongUrl("/"+urlData.getLongUrl());	
+    	}
+    	List<UrlData> presentUrl=urlRepository.findBylongUrl(urlData.getLongUrl());
+    	if(presentUrl.isEmpty())
+    	{
     	String shortUrl="/"+shortUrlGenerator.getAlphaNumericString();
     	urlData.setShortUrl(shortUrl);
-        return urlRepository.save(urlData);
+    	return urlRepository.save(urlData);
+    	}
+		return null;
     }
     
 	
